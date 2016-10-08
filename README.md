@@ -5,10 +5,11 @@ Translation-aware Fully Convolutional Instance Segmentation
 
 This is the repository for TA-FCN, which is the winning entry of [COCO segmentation challenge 2016](http://mscoco.org/dataset/#detections-challenge2016).
 
-<img src='data/readme_img/COCO_test2015_000000045082.png', width='250'>
-<img src='data/readme_img/COCO_test2015_000000186924.png', width='250'>
-<img src='data/readme_img/COCO_test2015_000000174958.png', width='250'>
-<img src='data/readme_img/COCO_test2015_000000172816.png', width='250'>
+<img src='data/readme_img/COCO_test2015_000000045082.png', width='300'>
+<img src='data/readme_img/COCO_test2015_000000186924.png', width='300'>
+
+<img src='data/readme_img/COCO_test2015_000000174958.png', width='300'>
+<img src='data/readme_img/COCO_test2015_000000172816.png', width='300'>
 
 ### Resources
 
