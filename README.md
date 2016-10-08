@@ -1,6 +1,10 @@
 # TA-FCN
 Translation-aware Fully Convolutional Instance Segmentation
 
+Yi Li\*, Haozhi Qi\*, Jifeng Dai, Xiangyang Ji, Yichen Wei
+
+(\* Equal contribution. Work was done when Yi Li and Haozhi Qi were interns at MSRA)
+
 ### Introduction
 
 This is the repository for TA-FCN, which is the winning entry of [COCO segmentation challenge 2016](http://mscoco.org/dataset/#detections-challenge2016).
