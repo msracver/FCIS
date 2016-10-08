@@ -18,5 +18,5 @@ This is the repository for TA-FCN, which is the winning entry of [COCO segmentat
 ### Resources
 
 0. Visual results on the first 5k images from COCO test set: [OneDrive](https://onedrive.live.com/?authkey=%21ABB_CV2zvCEoNK0&id=F371D9563727B96F%2192190&cid=F371D9563727B96F)
-0. Slides in COCO ILSVRC and COCO workshop 2016: OneDrive
+0. Slides in ImageNet ILSVRC and COCO workshop 2016: OneDrive
 0. Code of TA-FCN is coming soon!
