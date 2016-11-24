@@ -14,12 +14,12 @@ This is the repository for Fully Convolutional Instance-aware Semantic Segmentat
  
  If you find FCIS useful for your research, please consider citing
  
- @article{liang2015proposal,
-  title={Fully Convolutional Instance-aware Semantic Segmentatio},
-  author={Li, Yi and Qi, Haozhi and Dai, Jifeng and Ji, Xiangyang and Wei, Yichen},
-  journal={arXiv preprint arXiv:1611.07709},
-  year={2016}
-}
+     @article{li2016fully,
+        Author = {Li, Yi and Qi, Haozhi and Dai, Jifeng and Ji, Xiangyang and Wei, Yichen},
+        Title = {Fully Convolutional Instance-aware Semantic Segmentation},
+        Journal = {arXiv preprint arXiv:1611.07709},
+        Year = {2016}
+     }
 
 <img src='data/readme_img/COCO_test2015_000000045082.png', width='300'>
 <img src='data/readme_img/COCO_test2015_000000186924.png', width='300'>
