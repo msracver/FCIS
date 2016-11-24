@@ -10,7 +10,7 @@ Yi Li\*, Haozhi Qi\*, Jifeng Dai, Xiangyang Ji, Yichen Wei
 ### Introduction
 
 This is the repository for Fully Convolutional Instance-aware Semantic Segmentation
- (FCIS), which is the winning entry of [COCO segmentation challenge 2016](http://mscoco.org/dataset/#detections-challenge2016). A arxiv tech report describing FCIS is available [here](https://arxiv.org/abs/1611.07709)
+ (FCIS), which won [COCO segmentation challenge 2016](http://mscoco.org/dataset/#detections-challenge2016) by a large margin. An arxiv tech report describing FCIS is available [here](https://arxiv.org/abs/1611.07709).
  
  If you find FCIS useful for your research, please consider citing
  
