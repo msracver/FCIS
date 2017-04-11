@@ -19,13 +19,15 @@ This is the repository for Fully Convolutional Instance-aware Semantic Segmentat
         Title = {Fully Convolutional Instance-aware Semantic Segmentation},
         Journal = {arXiv preprint arXiv:1611.07709},
         Year = {2016}
-     }
+     }
 
-<img src='data/readme_img/COCO_test2015_000000045082.png', width='300'>
-<img src='data/readme_img/COCO_test2015_000000186924.png', width='300'>
 
-<img src='data/readme_img/COCO_test2015_000000174958.png', width='300'>
-<img src='data/readme_img/COCO_test2015_000000172816.png', width='300'>
+
+<img src='data/readme_img/COCO_test2015_000000045082.png' width='300'>
+<img src='data/readme_img/COCO_test2015_000000186924.png' width='300'>
+
+<img src='data/readme_img/COCO_test2015_000000174958.png' width='300'>
+<img src='data/readme_img/COCO_test2015_000000172816.png' width='300'>
 
 ### Resources
 
