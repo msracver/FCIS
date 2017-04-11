@@ -19,7 +19,7 @@ This is the repository for Fully Convolutional Instance-aware Semantic Segmentat
         Title = {Fully Convolutional Instance-aware Semantic Segmentation},
         Journal = {arXiv preprint arXiv:1611.07709},
         Year = {2016}
-     }
+     }
 
 
 
