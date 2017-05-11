@@ -131,7 +131,7 @@ git clone https://github.com/msracver/FCIS.git
 2. Two config files have been provided so far: FCIS@COCO with OHEM and FCIS@VOC without OHEM. We use 8 and 4 GPUs to train models on COCO and on VOC, respectively.
 3. To perform experiments, run the python scripts with the corresponding config file as input. For example, to train and test FCIS on COCO with ResNet-v1-101, use the following command
     ```
-    python experiments/fcis/fcis_end2end_train_test.py --cfg experiments/fcis/cfgs/resnet_v1_101_coco_trainval_fcis_end2end_ohem.yaml
+    python experiments/fcis/fcis_end2end_train_test.py --cfg experiments/fcis/cfgs/resnet_v1_101_coco_fcis_end2end_ohem.yaml
     ```
     A cache folder would be created automatically to save the model and the log under `output/fcis/coco/` or `output/fcis/voc/`.
 4. Please find more details in config files and in our code.
