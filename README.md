@@ -9,7 +9,7 @@ The major contributors of this repository include [Haozhi Qi](https://github.com
 FCIS is initially described in a [CVPR 2017 spotlight paper](https://arxiv.org/abs/1611.07709). It is worth noticing that:
 * FCIS provides a simple, fast and accurate framework for instance segmentation.
 * Different from [MNC](https://github.com/daijifeng001/MNC), FCIS performs instance mask estimation and categorization jointly and simultanously, and estimates class-specific masks.
-* We did not exploit the various techniques & tricks in the Mask RCNN system, like increasing RPN anchor numbers (from 12 to 15), enlarging the image (shorter side from 600 to 800 pixels), utilizing FPN features and aligned ROI pooling. These techniques & tricks should be orthogonal to our simple baseline.
+* We did not exploit the various techniques & tricks in the Mask RCNN system, like increasing RPN anchor numbers (from 12 to 15), trainig on anchors out of image boundary, enlarging the image (shorter side from 600 to 800 pixels), utilizing FPN features and aligned ROI pooling. These techniques & tricks should be orthogonal to our simple baseline.
 
 
 ### Resources
