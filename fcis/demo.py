@@ -124,8 +124,12 @@ def main():
             masks = [all_masks[j] for j in range(1, num_classes)]
         else:
             masks = masks[0][:, 1:, :, :]
-            result_masks, result_dets = gpu_mask_voting(masks, boxes[0], scores[0], num_classes,
-                                                        100, im_shapes[0][1], im_shapes[0][0],
+            im_height = np.round(im_shapes[0][0] / scales[0]).astype('int')
+            im_width = np.round(im_shapes[0][1] / scales[0]).astype('int')
+            print (im_height, im_width)
+            boxes = clip_boxes(boxes[0], (im_height, im_width))
+            result_masks, result_dets = gpu_mask_voting(masks, boxes, scores[0], num_classes,
+                                                        100, im_width, im_height,
                                                         config.TEST.NMS, config.TEST.MASK_MERGE_THRESH,
                                                         config.BINARY_THRESH, ctx_id[0])
 

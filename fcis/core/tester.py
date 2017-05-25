@@ -129,8 +129,11 @@ def pred_eval(predictor, test_data, imdb, cfg, vis=False, thresh=1e-3, logger=No
                         all_masks[j][idx + delta] = cls_masks[keep, :]
                 else:
                     masks = masks[:, 1:, :, :]
+                    im_height = np.round(im_shapes[delta][0] / scales[delta]).astype('int')
+                    im_width = np.round(im_shapes[delta][1] / scales[delta]).astype('int')
+                    boxes = clip_boxes(boxes, (im_height, im_width))
                     result_mask, result_box = mask_voting(masks, boxes, scores, imdb.num_classes,
-                                                          max_per_image, im_shapes[delta][1], im_shapes[delta][0],
+                                                          max_per_image, im_width, im_height,
                                                           cfg.TEST.NMS, cfg.TEST.MASK_MERGE_THRESH,
                                                           cfg.BINARY_THRESH)
                     for j in xrange(1, imdb.num_classes):
