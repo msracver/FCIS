@@ -93,9 +93,9 @@ git clone https://github.com/msracver/FCIS.git
 	git checkout 62ecb60
 	git submodule update
 	```
-	3.2 Copy operators in `$(FCIS_ROOT)/rfcn/operator_cxx` or `$(FCIS_ROOT)/faster_rcnn/operator_cxx` to `$(YOUR_MXNET_FOLDER)/src/operator/contrib` by
+	3.2 Copy operators in `$(FCIS_ROOT)/fcis/operator_cxx` to `$(YOUR_MXNET_FOLDER)/src/operator/contrib` by
 	```
-	cp -r $(FCIS_ROOT)/rfcn/operator_cxx/* $(MXNET_ROOT)/src/operator/contrib/
+	cp -r $(FCIS_ROOT)/fcis/operator_cxx/* $(MXNET_ROOT)/src/operator/contrib/
 	```
 	3.3 Compile MXNet
 	```
