@@ -22,7 +22,7 @@ from utils.mask_voc2coco import mask_voc2coco
 from utils.tictoc import tic, toc
 import hickle as hkl
 from bbox.bbox_transform import clip_boxes
-import multiprocessing as mp
+import multiprocessing.dummy as mp
 
 def coco_results_one_category_kernel(data_pack):
     cat_id = data_pack['cat_id']
