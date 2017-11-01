@@ -113,7 +113,7 @@ git clone https://github.com/msracver/FCIS.git
 
 ### Demo
 
-1. To run the demo with our trained model (on COCO trainval35k), please download the model manually from [OneDrive](https://1drv.ms/u/s!Am-5JzdW2XHzhqMJZmVOEDgfde8_tg), and put it under folder `model/`.
+1. To run the demo with our trained model (on COCO trainval35k), please download the model manually from [OneDrive](https://1drv.ms/u/s!Am-5JzdW2XHzhqMJZmVOEDgfde8_tg) (chinese users can also get it from [BaiduYun](https://pan.baidu.com/s/1geOHioV) with code `tmd4`), and put it under folder `model/`.
 
 	Make sure it looks like this:
 	```
