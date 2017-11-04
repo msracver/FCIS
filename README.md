@@ -54,8 +54,8 @@ If you find FCIS useful in your research, please consider citing:
 
 |                                 | <sub>training data</sub> | <sub>testing data</sub>  | <sub>mAP^r</sub>  | <sub>mAP^r@0.5</sub> | <sub>mAP^r@0.75</sub>| <sub>mAP^r@S</sub> | <sub>mAP^r@M</sub> | <sub>mAP^r@L</sub> |
 |:---------------------------------:|:---------------:|:---------------:|:------:|:---------:|:---------:|:-------:|:-------:|:-------:|
-| <sub>FCIS, ResNet-v1-101, OHEM </sub> | <sub>coco trainval35k</sub> | <sub>coco minival</sub> | 28.7 | 50.5 | 28.8 | 7.7 | 31.0 | 50.1 |
-| <sub>FCIS, ResNet-v1-101, OHEM </sub> | <sub>coco trainval35k</sub> | <sub>coco test-dev</sub>| 29.0 | 51.2 | 29.5 | 7.7 | 30.6 | 48.9 |
+| <sub>FCIS, ResNet-v1-101, OHEM </sub> | <sub>coco trainval35k</sub> | <sub>coco minival</sub> | 29.2 | 50.8 | 29.7 | 7.9 | 31.4 | 51.1 |
+| <sub>FCIS, ResNet-v1-101, OHEM </sub> | <sub>coco trainval35k</sub> | <sub>coco test-dev</sub>| 29.6 | 51.4 | 30.2 | 8.0 | 31.0 | 49.7 |
 
 *Running time is counted on a single Maxwell Titan X GPU (mini-batch size is 1 in inference).*
 
@@ -113,7 +113,7 @@ git clone https://github.com/msracver/FCIS.git
 
 ### Demo
 
-1. To run the demo with our trained model (on COCO trainval35k), please download the model manually from [OneDrive](https://1drv.ms/u/s!Am-5JzdW2XHzhqMJZmVOEDgfde8_tg), and put it under folder `model/`.
+1. To run the demo with our trained model (on COCO trainval35k), please download the model manually from [OneDrive](https://1drv.ms/u/s!Am-5JzdW2XHzhqMJZmVOEDgfde8_tg) (Chinese users can also get it from [BaiduYun](https://pan.baidu.com/s/1geOHioV) with code `tmd4`), and put it under folder `model/`.
 
 	Make sure it looks like this:
 	```
