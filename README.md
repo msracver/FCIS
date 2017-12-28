@@ -86,16 +86,24 @@ git clone https://github.com/msracver/FCIS.git
 2. For Windows users, run ``cmd .\init.bat``. For Linux user, run `sh ./init.sh`. The scripts will build cython module automatically and create some folders.
 
 3. Install MXNet:
+	
+	**Note: The MXNet's Custom Op cannot execute parallelly using multi-gpus after this [PR](https://github.com/apache/incubator-mxnet/pull/6928). We strongly suggest the user rollback to version [MXNet@(commit 998378a)](https://github.com/dmlc/mxnet/tree/998378a) for training (following Section 3.2 - 3.5).**
 
-	3.1 Clone MXNet and checkout to [MXNet@(commit 62ecb60)](https://github.com/dmlc/mxnet/tree/62ecb60) by
+	***Quick start***
+
+	3.1 Install MXNet and all dependencies by 
+	```
+	pip install -r requirements.txt
+	```
+	If there is no other error message, MXNet should be installed successfully. 
+	
+	***Build from source (alternative way)***
+
+	3.2 Clone MXNet and checkout to [MXNet@(commit 998378a)](https://github.com/dmlc/mxnet/tree/998378a) by
 	```
 	git clone --recursive https://github.com/dmlc/mxnet.git
-	git checkout 62ecb60
+	git checkout 998378a
 	git submodule update
-	```
-	3.2 Copy operators in `$(FCIS_ROOT)/fcis/operator_cxx` to `$(YOUR_MXNET_FOLDER)/src/operator/contrib` by
-	```
-	cp -r $(FCIS_ROOT)/fcis/operator_cxx/* $(MXNET_ROOT)/src/operator/contrib/
 	```
 	3.3 Compile MXNet
 	```
