@@ -87,7 +87,7 @@ git clone https://github.com/msracver/FCIS.git
 
 3. Install MXNet:
 	
-	**Note: The MXNet's Custom Op cannot execute parallelly using multi-gpus after this [PR](https://github.com/apache/incubator-mxnet/pull/6928). We strongly suggest the user rollback to version [MXNet@(commit 998378a)](https://github.com/dmlc/mxnet/tree/998378a) for training (following Section 3.2 - 3.5).**
+	**Note: The MXNet's Custom Op cannot execute parallelly using multi-gpus after this [PR](https://github.com/apache/incubator-mxnet/pull/6928). We strongly suggest the user rollback to version [MXNet@(commit 998378a)](https://github.com/dmlc/mxnet/tree/998378a) for training (following Section 3.2 - 3.6).**
 
 	***Quick start***
 
@@ -105,19 +105,23 @@ git clone https://github.com/msracver/FCIS.git
 	git checkout 998378a
 	git submodule update
 	```
-	3.3 Compile MXNet
+	3.3 Copy channel operators in `$(FCIS_ROOT)/fcis/operator_cxx` to `$(YOUR_MXNET_FOLDER)/src/operator/contrib` by
+	```
+	cp -r $(FCIS_ROOT)/fcis/operator_cxx/channel_operator* $(MXNET_ROOT)/src/operator/contrib/
+    ```
+	3.4 Compile MXNet
 	```
 	cd ${MXNET_ROOT}
 	make -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
 	```
-	3.4 Install the MXNet Python binding by
+	3.5 Install the MXNet Python binding by
 	
 	***Note: If you will actively switch between different versions of MXNet, please follow 3.5 instead of 3.4***
 	```
 	cd python
 	sudo python setup.py install
 	```
-	3.5 For advanced users, you may put your Python packge into `./external/mxnet/$(YOUR_MXNET_PACKAGE)`, and modify `MXNET_VERSION` in `./experiments/fcis/cfgs/*.yaml` to `$(YOUR_MXNET_PACKAGE)`. Thus you can switch among different versions of MXNet quickly.
+	3.6 For advanced users, you may put your Python packge into `./external/mxnet/$(YOUR_MXNET_PACKAGE)`, and modify `MXNET_VERSION` in `./experiments/fcis/cfgs/*.yaml` to `$(YOUR_MXNET_PACKAGE)`. Thus you can switch among different versions of MXNet quickly.
 
 ### Demo
 
