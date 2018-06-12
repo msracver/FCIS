@@ -32,7 +32,7 @@ This is an official implementation for [Fully Convolutional Instance-aware Seman
 
 ### License
 
-© Microsoft, 2017. Licensed under an Apache-2.0 license.
+© Microsoft, 2017. Licensed under an MIT license.
 
 ### Citing FCIS
 
