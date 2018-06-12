@@ -1,3 +1,10 @@
+# --------------------------------------------------------
+# Fully Convolutional Instance-aware Semantic Segmentation
+# Copyright (c) 2017 Microsoft
+# Licensed under The MIT License [see LICENSE for details]
+# Written by Yi Li, Haozhi Qi
+# --------------------------------------------------------
+
 import cPickle
 import os
 import cv2

@@ -1,7 +1,7 @@
 # --------------------------------------------------------
 # Fully Convolutional Instance-aware Semantic Segmentation
 # Copyright (c) 2015 Microsoft
-# Licensed under The Apache-2.0 License [see LICENSE for details]
+# Licensed under The MIT License [see LICENSE for details]
 # Modified from py-faster-rcnn (https://github.com/rbgirshick/py-faster-rcnn)
 # --------------------------------------------------------
 

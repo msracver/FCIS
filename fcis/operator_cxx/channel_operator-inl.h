@@ -1,6 +1,6 @@
 /*!
  * Copyright (c) 2017 Microsoft
- * Licensed under The Apache-2.0 License [see LICENSE for details]
+ * Licensed under The MIT License [see LICENSE for details]
  * \file channel_operator-inl.h
  * \brief 
  * \author Haozhi Qi, Yi Li, Guodong Zhang, Jifeng Dai
