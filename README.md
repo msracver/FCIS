@@ -103,6 +103,7 @@ git clone https://github.com/msracver/FCIS.git
 	```
 	git clone --recursive https://github.com/dmlc/mxnet.git
 	git checkout 998378a
+	git submodule init
 	git submodule update
 	```
 	3.3 Copy channel operators in `$(FCIS_ROOT)/fcis/operator_cxx` to `$(YOUR_MXNET_FOLDER)/src/operator/contrib` by
